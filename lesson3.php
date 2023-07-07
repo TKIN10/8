@@ -24,27 +24,27 @@
 // 15 アホわん
 
 
-function nabeatsu($i)
+function nabeatsu($x)
 {
-    // この関数内に処理を記述
-    for ($i = 1; $i < 16; $i++) {
-        if (($i % 3 === 0) && ($i % 5 === 0)) {
-            echo $i;
-            echo 'アホわん';
-            echo '<br>';
-        }elseif ($i % 3 == 0) {
-            echo $i;
-            echo 'アホ';
-            echo '<br>';
-        }elseif ($i % 5 == 0) {
-            echo $i;
-            echo 'わん';
-            echo '<br>';
-        }else {
-            echo $i;
-            echo '<br>';
-        }
-    }
+     // この関数内に処理を記述
+     for ($i = 1; $i<=$x ; $i++) {
+         if (($i % 3 === 0) && ($i % 5 === 0)) {
+             echo $i;
+             echo 'アホわん';
+             echo '<br>';
+         }elseif ($i % 3 == 0) {
+             echo $i;
+             echo 'アホ';
+             echo '<br>';
+         }elseif ($i % 5 == 0) {
+             echo $i;
+             echo 'わん';
+             echo '<br>';
+         }else {
+             echo $i;
+             echo '<br>';
+         }
+     }
 }
 ?>
 <!DOCTYPE html>
@@ -57,7 +57,7 @@ function nabeatsu($i)
     <section>
         <!-- ここに結果表示 -->
         <?php 
-        echo nabeatsu(1);
+        nabeatsu(15);
         ?>
     </section>
 </body>

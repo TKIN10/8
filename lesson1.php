@@ -3,9 +3,9 @@
 
 
 function convertThreeTimes($x) {
-  echo ($x * 3);
+  return $x * 3;
 };
 
-convertThreeTimes(5);
+echo convertThreeTimes(5);
 
 // 15

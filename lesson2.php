@@ -6,9 +6,9 @@
 
 
 // // ・現在日時（xxxx年xx月xx日（x曜日））
-$week = array("日","月","火","水","木","金","土");
-    $today = $week[date("w")];
-    echo date("Y年m月d日") . "(" . $today , "曜日",")"."</br>";
+$week = array( "日", "月", "火", "水", "木", "金", "土" );
+echo date("Y年m月d日");
+echo $week[date("w")]."曜日"."</br>";
 // ・現在日時から３日後（yyyy年mm月dd日 H時i分s秒）
 echo date("Y-m-d H:i:s",strtotime("+3 day"))."</br>";
 // ・現在日時から１２時間前（yyyy年mm月dd日 H時i分s秒）

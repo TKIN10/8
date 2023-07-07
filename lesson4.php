@@ -36,7 +36,7 @@ function calc($yen, $product) {
       if($j > 500){
         echo $j . "円札×" . $sheet[$i] . "枚" . "、";
       }elseif($j < 10000){
-        echo $j . "円札×" . $sheet[$i] . "枚" . "、";
+        echo $j . "円玉×" . $sheet[$i] . "枚" . "、";
       }
     }
     }
