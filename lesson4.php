@@ -25,7 +25,7 @@ $product = 150; // 商品金額
 function calc($yen, $product) {
     // この関数内に処理を記述
     if ($yen < $product) {
-        echo ($product - $yen) . '円足りません。';
+        echo ($product - $yen) . "円足りません。";
         return;
     }
     $change = $yen - $product;
@@ -33,11 +33,8 @@ function calc($yen, $product) {
       foreach ($money as $i => $j){
       $sheet[$i] = floor($change / $j);
       $change -= $j * $sheet[$i];
-      if($j > 500){
-        echo $j . "円札×" . $sheet[$i] . "枚" . "、";
-      }elseif($j < 10000){
-        echo $j . "円玉×" . $sheet[$i] . "枚" . "、";
-      }
+      $m = ($j > 500)  ? "札" : "玉";
+        echo $j . "円" . $m . "×". $sheet[$i] . "枚、";
     }
     }
 
